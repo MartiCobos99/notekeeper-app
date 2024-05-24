@@ -25,4 +25,4 @@ jobs:
       - name: testing code
         run: npm run test
       - name: Lint code
-        run: npm run lint2
+        run: npm run lint
