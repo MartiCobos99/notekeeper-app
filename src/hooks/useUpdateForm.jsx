@@ -6,7 +6,6 @@ export const useUpdateForm = (initialValues) => {
   const [important, setImportant] = useState(initialValues.important);
   const [status, setStatus] = useState(initialValues.status);
   const [due_Date, setDue_Date] = useState(initialValues.due_Date);
-  const [created_At, setCreated_At] = useState(initialValues.created_At);
 
   const handleNameValue = (event) => {
     setName(event.target.value);
@@ -28,22 +27,16 @@ export const useUpdateForm = (initialValues) => {
     setDue_Date(event.target.value);
   };
 
-  const handleCreated_AtValue = (event) => {
-    setCreated_At(event.target.value);
-  };
-
   return {
     name,
     description,
     important,
     status,
     due_Date,
-    created_At,
     handleNameValue,
     handleDescriptionValue,
     handleImportantValue,
     handleStatusValue,
     handleDue_DataValue,
-    handleCreated_AtValue,
   };
 };

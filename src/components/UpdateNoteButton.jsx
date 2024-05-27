@@ -10,7 +10,6 @@ export const UpdateNoteButton = ({
   noteImportant,
   noteStatus,
   noteDue_Date,
-  noteCreated_at,
   setVisibilityUpdateForm,
   visibilityUpdateForm,
 }) => {
@@ -33,7 +32,6 @@ export const UpdateNoteButton = ({
           noteImportant={noteImportant}
           noteStatus={noteStatus}
           noteDue_Date={noteDue_Date}
-          noteCreated_at={noteCreated_at}
           visibilityUpdateForm={setVisibilityUpdateForm}
         />
       ) : (

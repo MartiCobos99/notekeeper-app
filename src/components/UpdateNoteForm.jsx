@@ -12,7 +12,6 @@ export const UpdateNoteForm = ({
   noteImportant,
   noteStatus,
   noteDue_Date,
-  noteCreated_at,
   visibilityUpdateForm,
 }) => {
   const {
@@ -27,14 +26,12 @@ export const UpdateNoteForm = ({
     handleImportantValue,
     handleStatusValue,
     handleDue_DataValue,
-    handleCreated_AtValue,
   } = useUpdateForm({
     name: noteName,
     description: noteDescription,
     important: noteImportant,
     status: noteStatus,
     due_Date: noteDue_Date,
-    created_At: noteCreated_at,
   });
   const editNote = (event) => {
     event.preventDefault();
@@ -95,12 +92,6 @@ export const UpdateNoteForm = ({
             id="Due_Date"
             value={due_Date}
             onChange={handleDue_DataValue}
-          />
-          <label htmlFor="Created">created_at: </label>
-          <input
-            id="Created"
-            value={created_At}
-            onChange={handleCreated_AtValue}
           />
         </div>
         <div>

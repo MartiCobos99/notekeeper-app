@@ -16,8 +16,6 @@ export const CreateNoteForm = ({
   setStatus,
   newDue_Date,
   setDue_Date,
-  newCreated_At,
-  setCreated_At,
 }) => {
   const addNewNote = (event) => {
     event.preventDefault();
@@ -27,7 +25,6 @@ export const CreateNoteForm = ({
       important: Boolean(newImportant),
       status: newStatus,
       due_date: newDue_Date,
-      created_at: Number(newCreated_At),
     };
     if (
       validateType(newNote) &&
@@ -62,12 +59,6 @@ export const CreateNoteForm = ({
           <input id="new-Status" value={newStatus} onChange={setStatus} />
           <label htmlFor="new-Due_Date">due_date: </label>
           <input id="new-Due_Date" value={newDue_Date} onChange={setDue_Date} />
-          <label htmlFor="new-Created">created_at: </label>
-          <input
-            id="new-Created"
-            value={newCreated_At}
-            onChange={setCreated_At}
-          />
         </div>
         <div>
           <button type="submit">add</button>

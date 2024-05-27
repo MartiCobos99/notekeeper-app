@@ -6,7 +6,6 @@ export const useCreateForm = () => {
   const [newImportant, setImportant] = useState("");
   const [newStatus, setStatus] = useState("");
   const [newDue_Date, setDue_Date] = useState("");
-  const [newCreated_At, setCreated_At] = useState("");
 
   const handleNewNameValue = (event) => {
     setName(event.target.value);
@@ -26,21 +25,16 @@ export const useCreateForm = () => {
   const handleNewDue_DataValue = (event) => {
     setDue_Date(event.target.value);
   };
-  const handleNewCreated_AtValue = (event) => {
-    setCreated_At(event.target.value);
-  };
   return {
     newName,
     newDescription,
     newImportant,
     newStatus,
     newDue_Date,
-    newCreated_At,
     handleNewNameValue,
     handleNewDescriptionValue,
     handleNewImportantValue,
     handleNewStatusValue,
     handleNewDue_DataValue,
-    handleNewCreated_AtValue,
   };
 };

@@ -14,7 +14,6 @@ function App() {
     handleNewImportantValue,
     handleNewStatusValue,
     handleNewDue_DataValue,
-    handleNewCreated_AtValue,
   } = useCreateForm();
   const { note, handleNote } = useNote();
   const { visibilityUpdateForm, handleVisibilityUpdateFormValue } =
@@ -41,8 +40,6 @@ function App() {
         setStatus={handleNewStatusValue}
         newDue_Date={newDue_Date}
         setDue_Date={handleNewDue_DataValue}
-        newCreate_At={newCreated_At}
-        setCreate_At={handleNewCreated_AtValue}
       />
     </>
   );

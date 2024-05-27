@@ -7,7 +7,7 @@
  * @returns {boolean} - Returns true if the note is one of the valid statuses, otherwise false.
  */
 export const validateEnum = (note) => {
-  if (note === "Pending" || note === "In Progress" || note === "Done") {
+  if (note === "pending" || note === "in progress" || note === "done") {
     return true;
   }
   return false;
