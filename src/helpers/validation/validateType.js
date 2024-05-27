@@ -1,12 +1,11 @@
 export const validateType = (note) => {
   if (
-    typeof note[0].id === "string" &&
-    typeof note[0].name === "string" &&
-    typeof note[0].description === "string" &&
-    typeof note[0].important === "boolean" &&
-    typeof note[0].status === "string" &&
-    typeof note[0].due_date === "string" &&
-    typeof note[0].created_at === "number"
+    typeof note.name === "string" &&
+    typeof note.description === "string" &&
+    typeof note.important === "boolean" &&
+    typeof note.status === "string" &&
+    typeof note.due_date === "string" &&
+    typeof note.created_at === "number"
   ) {
     return true;
   }
