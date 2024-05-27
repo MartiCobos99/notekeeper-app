@@ -52,13 +52,21 @@ export const CreateNoteForm = ({
             onChange={setDescription}
           />
           <label htmlFor="new-Important">Important: </label>
-          <input id="new-Important" value={newImportant} onChange={setImportant} />
+          <input
+            id="new-Important"
+            value={newImportant}
+            onChange={setImportant}
+          />
           <label htmlFor="new-Status">status: </label>
           <input id="new-Status" value={newStatus} onChange={setStatus} />
           <label htmlFor="new-Due_Date">due_date: </label>
           <input id="new-Due_Date" value={newDue_Date} onChange={setDue_Date} />
           <label htmlFor="new-Created">created_at: </label>
-          <input id="new-Created" value={newCreated_At} onChange={setCreated_At} />
+          <input
+            id="new-Created"
+            value={newCreated_At}
+            onChange={setCreated_At}
+          />
         </div>
         <div>
           <button type="submit">add</button>

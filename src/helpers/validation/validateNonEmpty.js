@@ -1,3 +1,16 @@
+/**
+ * validateNonEmpty
+ *
+ * Validates if all the properties of a given note object are non-empty strings.
+ * The properties checked are: name, description, status, and due_date.
+ *
+ * @param {Object} note - The note object to validate.
+ * @param {string} note.name - The name of the note.
+ * @param {string} note.description - The description of the note.
+ * @param {string} note.status - The status of the note.
+ * @param {string} note.due_date - The due date of the note.
+ * @returns {boolean} - Returns true if all properties are non-empty strings, otherwise false.
+ */
 export const validateNonEmpty = (note) => {
   if (
     note.name !== "" &&
@@ -13,3 +26,4 @@ export const validateNonEmpty = (note) => {
   }
   return false;
 };
+//Les firmes son generades amb chat gpt

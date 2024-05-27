@@ -18,7 +18,7 @@ const create = (newObject) => {
       important: newObject.important,
       status: newObject.status,
       due_date: newObject.due_date,
-      created_at: newObject.created_at
+      created_at: newObject.created_at,
     }),
   }).then((response) => {
     return response.json();

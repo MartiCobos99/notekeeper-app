@@ -59,12 +59,12 @@ export const UpdateNoteForm = ({
           editNote.important,
           editNote.status,
           editNote.due_date,
-          editNote.created_at
+          editNote.created_at,
         )
         .then((data) => {
           setNote([...note, data]);
         })
-        .finally(()=>{
+        .finally(() => {
           visibilityUpdateForm(false);
         });
     }
