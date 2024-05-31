@@ -1,5 +1,4 @@
 import { UpdateNoteForm } from "./UpdateNoteForm";
-import { useUpdateForm } from "../hooks";
 
 export const UpdateNoteButton = ({
   setNote,

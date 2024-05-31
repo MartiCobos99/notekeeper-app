@@ -8,7 +8,6 @@ function App() {
     newImportant,
     newStatus,
     newDue_Date,
-    newCreated_At,
     handleNewNameValue,
     handleNewDescriptionValue,
     handleNewImportantValue,
